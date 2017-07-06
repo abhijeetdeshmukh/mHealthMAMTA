@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context="com.abhijeetdeshmukh.android.mhealthmamta.FormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Heading-->
+        <TextView android:text="@string/heading_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HeadingStyle"/>
+
+        <!--subheading - Background -->
+        <TextView android:text="@string/subheading_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SubHeadingStyle" />
+
+        <!-- Aadhaar category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView android:text="@string/category_aadhar"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingStart="4dp">
+
+                <!--aadhar field -->
+                <EditText android:id="@+id/et_pw_aadhaar"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_pw_aadhaar"
+                    android:inputType="number" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Name category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_pw_name" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <!--First Name field -->
+                <EditText
+                    android:id="@+id/et_pw_name"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_full_name"
+                    android:inputType="textCapWords" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+         <!--DOB category with age-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_dob" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp">
+
+                <!--DOB field -->
+                <Button
+                    android:id="@+id/btn_pw_dob"
+                    style="@style/DOBFieldStyle"
+                    android:hint="@string/hint_pw_dob"
+                    android:layout_weight="3"/>
+
+
+                <TextView
+                    android:id="@+id/tv_pw_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_pw_age"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Husbands/Guardians category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_husbands_guardians_name" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <!--Full Name field -->
+                <EditText
+                    android:id="@+id/et_husband_guardian_name"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_full_name"
+                    android:inputType="textCapWords" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Address category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_pw_address" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <!--Address Line 1 field -->
+                <EditText
+                    android:id="@+id/et_pw_address"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_pw_address"
+                    android:inputType="textCapWords" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Gravida/Para/Abortion/ living (G/P/A/L) category-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_G_P_A_L" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp">
+
+                <!--gravida field -->
+                <EditText android:id="@+id/et_pw_gravida"
+                    style="@style/GPALFieldStyle"
+                    android:hint="@string/hint_pw_gravida"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:text="@string/separator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--Para field -->
+                <EditText android:id="@+id/et_pw_para"
+                    style="@style/GPALFieldStyle"
+                    android:hint="@string/hint_pw_para"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:text="@string/separator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-- Abortion field -->
+                <EditText android:id="@+id/et_pw_abortion"
+                    style="@style/GPALFieldStyle"
+                    android:hint="@string/hint_pw_abortion"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:text="@string/separator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-- Living field -->
+                <EditText android:id="@+id/et_pw_living"
+                    style="@style/GPALFieldStyle"
+                    android:hint="@string/hint_pw_living"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--LCB (Last Child Birth) category-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_lcb" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <!--DOB field -->
+                <Button
+                    android:id="@+id/btn_pw_lcb"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_pw_lcb" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--LMP category-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_lmp" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <!--LMP field -->
+                <Button
+                    android:id="@+id/btn_pw_lmp"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_pw_lmp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Expected Date of Delivery (EDD) category-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_edd" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <!--DOB field -->
+                <Button
+                    android:id="@+id/btn_pw_edd"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_pw_edd" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--MCTS/RCH No. category-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_MCTS_RCH" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <EditText android:id="@+id/et_pw_MCTS_RCH"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_pw_MCTS_RCH"
+                    android:inputType="text" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Sub-Centre/Ward category-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_SubCentre_Ward" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <EditText android:id="@+id/et_pw_subCentre_ward"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_pw_SubCentre_Ward"
+                    android:inputType="text" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Block/PPC category-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_Block_PPC" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <EditText android:id="@+id/et_pw_Block_PPC"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_pw_Block_PPC"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Blood Group category -->
+        <LinearLayout
+            android:id="@+id/container_blood_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_blood_group" />
+
+            <!-- Input field -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <!-- blood group drop-down spinner -->
+                <Spinner
+                    android:id="@+id/spinner_blood_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:paddingEnd="16dp"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Weight category -->
+        <LinearLayout
+            android:id="@+id/container_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_weight" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="4dp">
+
+                <!-- Weight field -->
+                <EditText
+                    android:id="@+id/et_pw_weight"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_pw_weight"
+                    android:inputType="number" />
+
+                <!-- Units for weight (kg) -->
+                <TextView
+                    android:id="@+id/label_patients_weight_units"
+                    style="@style/EditorUnitsStyle"
+                    android:text="@string/unit_pw_weight" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- Height category -->
+        <LinearLayout
+            android:id="@+id/container_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_height" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="4dp">
+
+                <!-- Height field -->
+                <EditText android:id="@+id/et_pw_height"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_pw_height"
+                    android:inputType="number" />
+
+                <!-- Units for height (cm) -->
+                <TextView android:id="@+id/label_patients_height_units"
+                    style="@style/EditorUnitsStyle"
+                    android:text="@string/unit_pw_height" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--subsection - Geographical Profile (As per the Format for Identification of difficult Village)-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SubHeadingStyle"
+            android:text="@string/subheading_geographical_profile"/>
+
+        <!--Category of Village-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_of_village" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <!--Category of village rop down spinner-->
+                <Spinner
+                    android:id="@+id/spinner_village_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Date of Registration category -->
+        <!-- Date of Creating Profile/registration -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_profile_registration_date" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp"
+                android:gravity="left">
+
+                <!--Date of profile creation -->
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/tv_profile_registration_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

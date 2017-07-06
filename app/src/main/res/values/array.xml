@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- These are the options displayed in the login user type drop-down Spinner -->
+    <string-array name="array_user_type_options">
+        <item>@string/user_asha</item>
+        <item>@string/user_anm</item>
+        <item>@string/user_medical_organisation</item>
+    </string-array>
+
+    <!-- These are the options displayed in the blood group type drop-down Spinner -->
+    <string-array name="array_blood_group_type_options">
+        <item>@string/blood_group_ap</item>
+        <item>@string/blood_group_an</item>
+        <item>@string/blood_group_bp</item>
+        <item>@string/blood_group_bn</item>
+        <item>@string/blood_group_abp</item>
+        <item>@string/blood_group_abn</item>
+        <item>@string/blood_group_op</item>
+        <item>@string/blood_group_on</item>
+    </string-array>
+
+    <!-- These are the options displayed in the Category of the village drop-down Spinner -->
+    <string-array name="array_village_category_options">
+        <item>@string/village_type_completely_cutoff</item>
+        <item>@string/village_type_seasonally_cutoff</item>
+    </string-array>
+
+</resources>

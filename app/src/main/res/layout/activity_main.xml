@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context="com.abhijeetdeshmukh.android.mhealthmamta.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#f1f1f1"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <Button android:id="@+id/btn_profile"
+            style="@style/LogInStyle"
+            android:text="@string/profile" />
+
+        <Button android:id="@+id/btn_anm_visit1"
+            style="@style/LogInStyle"
+            android:text="@string/anm_visit1" />
+
+        <Button android:id="@+id/btn_anm_visit2"
+            style="@style/LogInStyle"
+            android:text="@string/anm_visit2" />
+
+        <Button android:id="@+id/btn_anm_visit3"
+            style="@style/LogInStyle"
+            android:text="@string/anm_visit3" />
+
+        <Button android:id="@+id/btn_anm_visit4"
+            style="@style/LogInStyle"
+            android:text="@string/anm_visit4" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

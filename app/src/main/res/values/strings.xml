@@ -1,0 +1,186 @@
+<resources>
+    <string name="app_name">mHealthMAMTA</string>
+
+    <!--//////////////////////////////////////////-->
+    <!--for activity_login.xml-->
+    <string name="login_as">Login as: </string>
+    <string name="hint_enter_username">Enter username</string>
+    <string name="hint_enter_password">Enter password</string>
+    <string name="login">Log In</string>
+    <string name="menu_admin_login">Admin Login</string>
+    <string name="user_asha">ASHA worker</string>
+    <string name="user_anm">ANM</string>
+    <string name="user_medical_organisation">Medical organisation</string>
+
+    <!--for activity_login.xml-->
+    <!--//////////////////////////////////////////-->
+
+
+    <string name="profile">Profile</string>
+    <string name="anm_visit1">Visit 1</string>
+    <string name="anm_visit2">Visit 2</string>
+    <string name="anm_visit3">Visit 3</string>
+    <string name="anm_visit4">Visit 4</string>
+
+    <!--//////////////////////////////////////////-->
+    <!--for activity_profile_list.xml-->
+
+    <!-- Title text for the empty view, which describes the empty dog house image [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">It\'s a bit lonely here...</string>
+
+    <!-- Subtitle text for the empty view that prompts the user to add a profile [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text">Get started by adding a profile</string>
+
+    <!-- Label for overflow menu option that inserts fake profile data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <!-- Label for overflow menu option that deletes all profile data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries">Delete All Profile</string>
+
+
+    <!--for activity_profile_list.xml-->
+    <!--//////////////////////////////////////////-->
+
+
+    <!-- Label for the pregnant woman's address if the address is unknown [CHAR LIMIT=20] -->
+    <string name="unknown_address">Unknown address</string>
+
+
+    <!--//////////////////////////////////////////-->
+    <!--for activity_form.xml-->
+
+    <string name="heading_profile">Individual Assessment Checklist for Pregnant Woman</string>
+    <string name="subheading_background">A : Background</string>
+
+    <string name="category_aadhar">Aadhaar</string>
+    <string name="hint_pw_aadhaar">Aadhaar Number</string>
+
+    <string name="category_pw_name">Name of the Pregnant Woman</string>
+    <string name="hint_full_name">First - Middle - Last Name</string>
+
+    <string name="category_dob">DOB of the Pregnant Woman</string>
+    <string name="hint_pw_dob">Date of Birth</string>
+    <string name="hint_pw_age">Age : </string>
+    <string name="category_husbands_guardians_name">Husbands/Guardians Name</string>
+    <string name="category_pw_address">Address including P.S.</string>
+    <string name="hint_pw_address">Address</string>
+
+    <string name="separator"> -- </string>
+
+    <string name="category_G_P_A_L">Gravida/Para/Abortion/ living (G/P/A/L)</string>
+    <string name="hint_pw_gravida"> G </string>
+    <string name="hint_pw_para"> P </string>
+    <string name="hint_pw_abortion"> A </string>
+    <string name="hint_pw_living"> L </string>
+
+    <string name="category_lcb"> Date of the Last child Birth</string>
+    <string name="hint_pw_lcb">Date of LCB</string>
+    <string name="category_lmp">LMP Date</string>
+    <string name="hint_pw_lmp">Date of LMP</string>
+    <string name="category_edd">Expected Date of Delivery (EDD)</string>
+    <string name="hint_pw_edd">EDD</string>
+
+    <string name="category_MCTS_RCH">MCTS/RCH Number</string>
+    <string name="hint_pw_MCTS_RCH">MCTS/RCH</string>
+
+    <string name="category_SubCentre_Ward">Sub-Centre/Ward</string>
+    <string name="hint_pw_SubCentre_Ward">Sub-Centre/Ward</string>
+
+    <string name="category_Block_PPC">Block/PPC</string>
+    <string name="hint_pw_Block_PPC">Block/PPC</string>
+
+    <string name="category_blood_group">Blood Group</string>
+    <string name="blood_group_ap">A+</string>
+    <string name="blood_group_an">A-</string>
+    <string name="blood_group_bp">B+</string>
+    <string name="blood_group_bn">B-</string>
+    <string name="blood_group_abp">AB+</string>
+    <string name="blood_group_abn">AB-</string>
+    <string name="blood_group_op">O+</string>
+    <string name="blood_group_on">O-</string>
+
+    <string name="category_weight">Weight</string>
+    <string name="hint_pw_weight">Weight</string>
+    <string name="unit_pw_weight">kg</string>
+
+    <string name="category_height">Height</string>
+    <string name="hint_pw_height">Height</string>
+    <string name="unit_pw_height">cm</string>
+
+    <string name="subheading_geographical_profile">B : Geographical Profile</string>
+    <string name="category_of_village">Category of Village</string>
+    <string name="hint_ategory_of_village">Category of Village</string>
+    <string name="village_type_completely_cutoff">Completely Cut-off</string>
+    <string name="village_type_seasonally_cutoff">Seasonally Cut-off</string>
+
+    <string name="category_profile_registration_date">Date of Registration</string>
+
+    <string name="form_activity_title_new_profile">Add a Profile</string>
+    <string name="form_activity_title_edit_profile">Edit Profile</string>
+
+    <!-- Toast message in form when new profile has been successfully inserted [CHAR LIMIT=NONE] -->
+    <string name="form_insert_profile_successful">profile saved</string>
+
+    <!-- Toast message in form when new profile has failed to be inserted [CHAR LIMIT=NONE] -->
+    <string name="form_insert_profile_failed">Error with saving profile</string>
+
+    <!-- Toast message in editor when current profile was successfully updated [CHAR LIMIT=NONE] -->
+    <string name="form_update_profile_successful">profile updated</string>
+
+    <!-- Toast message in editor when current profile was successfully updated [CHAR LIMIT=NONE] -->
+    <string name="form_update_profile_failef">Error with updating profile </string>
+
+
+    <!-- Dialog button text for the option to confirm deleting the current profile [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current profile [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Dialog message when user is leaving profile form but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current pet [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current profile [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete this profile?</string>
+
+    <!-- Toast message in editor when current profile has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="form_delete_profile_failed">Error with deleting profile</string>
+
+    <!-- Toast message in editor when current profile was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="form_delete_profile_successful">Profile deleted</string>
+
+    <!-- Label for form menu option to save profile and leave form [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current form [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <!--for activity_form.xml-->
+    <!--//////////////////////////////////////////-->
+
+
+    <!--//////////////////////////////////////////-->
+    <!--for activity_anm_form.xml-->
+    <string name="anm_visit"> ANM visits</string>
+    <string name="visit_1">VISIT I</string>
+    <string name="visit_2">VISIT II</string>
+    <string name="visit_3">VISIT III</string>
+    <string name="visit_4">VISIT IV</string>
+
+    <string name="heading_anm_visit1">History of Past Pregnancy </string>
+    <string name="subheading_anm_visit1">(To be assessed during 1st visit)</string>
+    <string name="category_anm_assessment_date">Date of Assessment</string>
+    <string name="anm_c11">More than 4 earlier pregnancies</string>
+
+
+    <!--for activity_anm_form.xml-->
+    <!--//////////////////////////////////////////-->
+
+
+</resources>
